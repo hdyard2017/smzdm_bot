@@ -55,8 +55,8 @@ if __name__ == '__main__':
     cookies = os.environ["COOKIES"]
     sb.load_cookie_str(cookies)
     res = sb.checkin()
-    msg = res.get["data"]
-    slogan = msg.get["slogan"]
+    msg = res.get("data")
+    slogan = msg.get("slogan")
     print(res)
     SERVERCHAN_SECRETKEY = os.environ["SERVERCHAN_SECRETKEY"]
     print('sc_key: ', SERVERCHAN_SECRETKEY)
